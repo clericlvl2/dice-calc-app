@@ -3,13 +3,50 @@ const calcOutputResult = calcBody.querySelector('.calc__output-result')
 const calcForm = calcBody.querySelector('.calc__form');
 const calcFormInput = calcForm.querySelector('.calc__form-input');
 
+class Calc {
+  constructor() {
+    this.log = [];
+  }
+
+  add() {
+
+  }
+
+  substitute() {
+
+  }
+
+  derive() {
+
+  }
+
+  multiply() {
+
+  }
+
+  addToLog(value) {
+    this.log.push(value);
+  }
+}
+
+class Dice {
+  constructor(value) {
+    this.number = value.slice(0, value.indexOf('d'));
+    this.edge = value.slice(value.indexOf('d'));
+  }
+
+  roll() {
+
+  }
+}
+
 function rollClickHandler() {
   console.log('roll');
 }
 
 function controlClickHandler(value) {
   if (value === 'del') {
-    calcFormInput.value = calcFormInput.value.slice(0,-1);
+    calcFormInput.value = calcFormInput.value.slice(0, -1);
   }
   if (value === 'C') {
     calcForm.reset();
