@@ -5,47 +5,72 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Dice Calculator</title>
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Dice Calc App</title>
 </head>
-<body class="page">
-<main class="app-body">
-  <div class="calc">
-    <div class="calc__input-window cell"></div>
-    <div class="calc__output-window cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-    <div class="calc__button cell"></div>
-  </div>
+<body class="root">
+<header class="header">
+  <h1 class="header__logo">Throw some dice...</h1>
+</header>
+<main class="main">
+  <section class="calc">
+    <p class="calc__output cell">
+      Result: <span class="calc__output-result"></span>
+    </p>
+    <form class="calc__form cell"
+          name="operation-form">
+      <input class="calc__form-input"
+             type="text"
+             name="operation-input"
+             id="operation-input">
+    </form>
+
+    <div class="calc__button cell cell_type_dice cell_value_d100">d100</div>
+    <div class="calc__button cell cell_type_dice cell_value_dx">dx</div>
+    <div class="calc__button cell cell_type_control cell_value_del">del</div>
+    <div class="calc__button cell cell_type_control cell_value_C">C</div>
+
+    <div class="calc__button cell cell_type_dice cell_value_d4">d4</div>
+    <div class="calc__button cell cell_type_dice cell_value_d6">d6</div>
+    <div class="calc__button cell cell_type_dice cell_value_d8">d8</div>
+    <div class="calc__button cell cell_type_operator cell_value_derive">/</div>
+
+    <div class="calc__button cell cell_type_dice cell_value_d10">d10</div>
+    <div class="calc__button cell cell_type_dice cell_value_d12">d12</div>
+    <div class="calc__button cell cell_type_dice cell_value_d20">d20</div>
+    <div class="calc__button cell cell_type_operator cell_value_multiply">*</div>
+
+    <div class="calc__button cell cell_type_number cell_value_1">1</div>
+    <div class="calc__button cell cell_type_number cell_value_2">2</div>
+    <div class="calc__button cell cell_type_number cell_value_3">3</div>
+    <div class="calc__button cell cell_type_operator cell_value_minus">-</div>
+
+    <div class="calc__button cell cell_type_number cell_value_4">4</div>
+    <div class="calc__button cell cell_type_number cell_value_5">5</div>
+    <div class="calc__button cell cell_type_number cell_value_6">6</div>
+    <div class="calc__button cell cell_type_operator cell_value_plus">+</div>
+
+    <div class="calc__button cell cell_type_number cell_value_7">7</div>
+    <div class="calc__button cell cell_type_number cell_value_8">8</div>
+    <div class="calc__button cell cell_type_number cell_value_9">9</div>
+
+    <div class="calc__button cell cell_type_number cell_value_0">0</div>
+    <div class="calc__button cell cell_type_operator cell_type_left-bra">(</div>
+    <div class="calc__button cell cell_type_operator cell_type_right-bra">)</div>
+
+    <div class="calc__button cell cell_type_roll">Roll</div>
+  </section>
+  <section class="board">
+    <h2>Drawing Board</h2>
+  </section>
+  <section class="chat">
+    <h2>Chat & Log</h2>
+  </section>
 </main>
-
-
-<script src="script.js"></script>
+<footer class="footer">
+  <p class="footer__author">Бударных Артем</p>
+</footer>
+<script src="pages/index.js"></script>
 </body>
 </html>
