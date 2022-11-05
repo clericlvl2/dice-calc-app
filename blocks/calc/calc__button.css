@@ -1,0 +1,11 @@
+.calc__button {
+  transition: opacity .24s, border-color .24s;
+  cursor: pointer;
+  border: solid 1px transparent;
+  padding: -1px;
+}
+
+.calc__button:hover {
+  opacity: .8;
+  border-color: rgba(0, 0, 0, .2);
+}

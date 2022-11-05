@@ -1,0 +1,10 @@
+.root {
+  background-color: #fff;
+  display: grid;
+  min-height: 100vh;
+  grid-template:
+    "header"  60px
+    "main" minmax(480px, calc(100vh - 120px))
+    "footer" 60px;
+  font-family: "Trebuchet MS", serif;
+}

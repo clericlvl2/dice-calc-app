@@ -1,0 +1,11 @@
+.header {
+  box-sizing: border-box;
+  grid-area: header;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  min-height: 60px;
+  background-color: rgba(252, 226, 219, 1);
+}

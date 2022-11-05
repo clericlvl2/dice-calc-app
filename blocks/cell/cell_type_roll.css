@@ -1,0 +1,5 @@
+.cell_type_roll {
+  grid-column: 4/5;
+  grid-row: 8/10;
+  background-color: rgba(180, 10, 65, .4);
+}

@@ -1,0 +1,13 @@
+.calc {
+  width: 200px;
+  height: 450px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50px;
+  border: 0 solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 15px 25px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}

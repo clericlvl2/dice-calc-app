@@ -1,0 +1,8 @@
+.chat__title {
+  min-height: 50px;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(180, 10, 65, .2);
+}
